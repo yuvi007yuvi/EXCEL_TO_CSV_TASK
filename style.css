@@ -1,0 +1,125 @@
+#logo {
+    width: 180px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-left: 42%;
+}
+/* Default styles for larger screens */
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#excelData, #csvData {
+    width: 400px;
+    height: 250px;
+    background-color: #f0f8ff;
+    border: 2px solid #7eb2e3;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #excelData, #csvData {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #copyButton {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    #setting {
+        margin-left: 0;
+        margin-top: 10px; /* Add margin to separate the button from the "Settings" image */
+    }
+}
+
+/* ... Your existing CSS ... */
+
+/* Reset default textarea styles */
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    resize: none;
+    box-sizing: border-box; /* Include padding in the width/height calculation */
+}
+
+/* Style for the container */
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+}
+
+/* Style for both textareas */
+#excelData, #csvData {
+    width: 400px; /* Set the width to create square text boxes */
+    height: 250px; /* Set the height to create square text boxes */
+    background-color: #f0f8ff; /* Light blue background color */
+    border: 2px solid #7eb2e3; /* Smooth border */
+    text-align: center; /* Center text horizontally */
+    line-height: 1.5; /* Center text vertically */
+}
+/* ... Your existing CSS ... */
+
+#features {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure it takes the full height of the container */
+}
+
+#features img {
+    margin-top: 50px;
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+}
+h2{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+/* ... Your existing CSS ... */
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-textarea {
+    position: relative;
+}
+
+#copyButton {
+    align-self: flex-start; /* Adjust button alignment as needed */
+    margin-top: 0px; /* Add some margin to separate the button from the textarea */
+}
+footer{
+    margin-top: 10%;
+
+}
+#flex{
+    margin-top: 5%;
+}
+#setting{
+    margin-left: 85%; /* Add some spacing between the textarea and settings button */
+}
+#logo img,
+#flex img,
+#features img {
+    max-width: 110%; /* Set maximum width to 100% for responsiveness */
+    height: auto; /* Allow the height to adjust proportionally */
+}
