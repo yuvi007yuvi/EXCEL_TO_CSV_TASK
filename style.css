@@ -20,7 +20,7 @@
     text-align: center;
     line-height: 1.5;
 }
-.footer {
+#footer {
   background-color: #a9b2fb;
   color: #f2f2f2;
   width: 100%;
@@ -130,7 +130,7 @@ footer{
 }
 #logo img,
 #flex img,
-#footer img,
+
 #features img {
     max-width: 110%; /* Set maximum width to 100% for responsiveness */
     height: auto; /* Allow the height to adjust proportionally */
